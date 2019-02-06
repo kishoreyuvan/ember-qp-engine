@@ -1,10 +1,15 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const environment = EmberApp.env();
+const isDevelopment = environment === 'development';
+let isSourceMapsEnabled = process.env.CI ? isDevelopment : ['development', 'test'].includes(environment);
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    sourcemaps: {
+      enabled: isSourceMapsEnabled
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
