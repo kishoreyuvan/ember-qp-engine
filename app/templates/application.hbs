@@ -1,5 +1,21 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h2 style="text:center">Ember Qp Application</h2>
+
+Transition to application's route with object type query param. object_type: { name: 'test', type: 'obj' }
+<br>
+{{#link-to "approute" (query-params object_type=object_type)}}
+  Application test route
+{{/link-to}}
+<br>
+<br>
+
+Transition to engine's route with object type query param. object_type: { name: 'test', type: 'obj' }
+<br>
+{{#link-to "engineroute.new" (query-params object_type=object_type)}}
+  Engine test route
+{{/link-to}}
+<br>
+<br>
+
+
 
 {{outlet}}
