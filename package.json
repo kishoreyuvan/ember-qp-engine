@@ -9,12 +9,12 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/kishoreyuvan/ember-qp-engine.git",
+  "repository": "",
   "scripts": {
     "build": "ember build",
-    "lint:js": "eslint ./*.js app blueprints config lib server tests",
-    "start": "ember serve",
-    "test": "ember test"
+    "start": "ember server",
+    "test": "ember test",
+    "prodBuild": "ember build --environment=production"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
