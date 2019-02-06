@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ember-qp-engine',
     environment,
-    rootURL: '/',
+    rootURL: '/ember-qp-engine/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -41,11 +41,6 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
     ENV.APP.autoboot = false;
-  }
-
-  if (environment === 'production') {
-    // here you can enable a production-specific feature
-    ENV.rootURL = '/ember-qp-engine/';
   }
 
   return ENV;
