@@ -517,6 +517,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("ember-qp-engine/app")["default"].create({"name":"ember-qp-engine","version":"0.0.0+e82f745a"});
+  require("ember-qp-engine/app")["default"].create({"name":"ember-qp-engine","version":"0.0.0+6741ceaf"});
 }
 //# sourceMappingURL=ember-qp-engine.map
